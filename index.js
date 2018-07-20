@@ -43,7 +43,12 @@ app.use(function(req, res, next) {
           res.render('index');
         });
 
+
 // GET / - ask page
+
+  app.get('/ask', function(req, res) {
+          res.render('ask');
+        });
 
   app.get('/ask', function(req, res) {
           res.render('ask');
