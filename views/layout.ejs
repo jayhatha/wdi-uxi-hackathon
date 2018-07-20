@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Favorite</title>
+    <title>Favorhood</title>
   </head>
   <body>
     <nav class="white">
@@ -23,8 +23,17 @@
    <li><a href="/users/<%= currentUser.id %>">Your Profile</a></li>
    <li><a href="/auth/logout">Log Out</a></li>
    <% } else { %>
-     <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
-     <li><a class="modal-trigger" href="#login">Log In</a></li>
+     <li><a href="/signup">Sign Up</a></li>
+     <li><a href="/login">Log In</a></li>
+     <li> </li>
+     <li>About</li>
+     <li>Terms of Use</li>
+     <li>Privacy Policy</li>
+     <li>Contact Us</li>
+     <li> </li>
+     <li>Account</li>
+     <li>Profile</li>
+     <li> </li>
      <% }; %>
      </ul>
 
@@ -83,25 +92,14 @@
   <div class="container">
   <%- body %>
   </div>
-  <footer class="page-footer light-green darken-3">
+  <footer class="page-footer light-green darken-4">
             <div class="row">
-<<<<<<< HEAD
               <div class="col s12 footericons">
                 <a href="/map"><img src='/img/search.png' class='bottomicon' height='50'></a></img>
                 <a href="/offer"><img src='/img/give.png' class='bottomicon' height='50'></a></img>
                 <a href="/ask"><img src='/img/receive.png' class='bottomicon' height='50'></a></img>
                 <a href="/results"><img src='/img/favorites.png' class='bottomicon' height='50'></a></img>
                 <a href="#"><img src='/img/messages.png' class='bottomicon' height='50'></a></img>
-=======
-              <div class="col s12">
-                <a href="/map">Maps</a>
-                <a href="/results">Profile</a>
-                <a href="/ask">Ask</a>
-                <a href="/offer">Offer</a>
-                <a href="/signup">Sign Up</a>
-                <a href="/login">Log In</a>
->>>>>>> 0fcb863aadea1cc73e742af2b1e927d59cdc1550
-              </div>
             </div>
   </footer>
 
