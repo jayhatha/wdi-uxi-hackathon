@@ -9,10 +9,6 @@
     <title>FAVORS??!</title>
   </head>
   <body>
-
-  <!--Miss Vanjie -->
-
-
     <nav class="pink accent-2">
     <div class="nav-wrapper">
       <a href="/" class="brand-logo"><img class="responsive-img" src="/img/logosmall.png"></a>
@@ -34,7 +30,7 @@
 <!--Miss Vanjie -->
  <ul id="mobile-demo" class="sidenav">
    <% if (currentUser) { %>
-    <p>Hiieeeeeeeeee,  <%= currentUser.name%>!</p>
+    <p>Hi, <%= currentUser.name%>!</p>
    <li><a href="/users/<%= currentUser.id %>">Your Profile</a></li>
    <li><a href="/auth/logout">Log Out</a></li>
    <% } else { %>
