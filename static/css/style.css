@@ -46,6 +46,10 @@ input {
 .ask {
 }
 
+.susan {
+  width: 70%;
+}
+
 p {
   font-size: 2em;
 }
@@ -53,5 +57,3 @@ p {
 label {
   font-size: 1em;
 }
-
-
