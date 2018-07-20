@@ -5,25 +5,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Lemon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>FAVORS??!</title>
   </head>
   <body>
-    <nav class='light-green darken-3'>
+    <nav class='light-green darken-3 '>
     <div class="nav-wrapper">
-      <a href="/" class="brand-logo"><img class="responsive-img" src="/img/logosmall.png"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a class="dropdown-trigger" href="#!" data-target="mylists">My?<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="/all" class="nav-link">All</a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="seasons">Another Thing<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="login-dropdown">
-          <% if (currentUser) { %>
-           <%= currentUser.name%>
-          <% }%>
-
-        <i class="material-icons right">perm_identity</i></li>
-    </a>
+      <a href="/" class="brand-logo center"><h5>Favrhood</h1></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">settings</i></a>
     </div>
   </nav>
 
@@ -36,58 +25,8 @@
      <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
      <li><a class="modal-trigger" href="#login">Log In</a></li>
      <% }; %>
-   <li><a href="/all">All ??</a></li>`
-       <li class="no-padding">
-         <ul class="collapsible collapsible-accordion">
-           <li>
-             <a class="collapsible-header">Hiiii<i class="material-icons">arrow_drop_down</i></a>
-             <div class="collapsible-body">
-               <ul>
-                 <li><a href="/season/1">1</a></li>
-                 <li><a href="/season/2">2</a></li>
-                 <li><a href="/season/3">3</a></li>
-               </ul>
-             </div>
-           </li>
-         </ul>
-       </li>
-       <li class="no-padding">
-         <ul class="collapsible collapsible-accordion">
-           <li>
-             <a class="collapsible-header">My Lists<i class="material-icons">arrow_drop_down</i></a>
-             <div class="collapsible-body">
-               <ul>
-                 <li><a href="/lists">My Lists</a></li>
-                 <li><a class="modal-trigger" href="#newlist">New List</a></li>
-               </ul>
-             </div>
-           </li>
-         </ul>
-       </li>
-       <li class="no-padding">
-       </li>
-
      </ul>
 
-
-  <!-- a dropdown -->
-  <ul id="seasons" class="dropdown-content">
-    <li><a href="/season/1">1</a></li>
-    <li><a href="/season/2">2</a></li>
-    <li><a href="/season/3">3</a></li>
-  </ul>
-
-  <!-- login dropdown -->
-  <ul id="login-dropdown" class="dropdown-content">
-    <% if (currentUser) { %>
-    <li><a href="/users/<%= currentUser.id %>">Your Profile</a></li>
-    <li><a href="/auth/logout">Log Out</a></li>
-    <% } else { %>
-      <li><a class="modal-trigger" href="#sign-up">Sign Up</a></li>
-      <li><a class="modal-trigger" href="#login">Log In</a></li>
-      <% }; %>
-
-  </ul>
 
 <!-- signup modal -->
   <div id="sign-up" class="modal">

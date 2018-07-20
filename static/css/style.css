@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: white;
   color: #466b34;
 }
@@ -27,6 +27,9 @@ input {
 }
 
 .request {
-  width: 20% !important;
-  background-color: red;
+  width: 40% !important;
+}
+
+.neighborhood {
+  width: 40% !important;
 }
