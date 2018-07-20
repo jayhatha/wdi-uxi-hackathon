@@ -3,3 +3,30 @@ body {
   background-color: white;
   color: #466b34;
 }
+
+.container {
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.bio {
+  margin-bottom: 3em;
+}
+
+input {
+  width: 40%;
+}
+
+.timepicker,
+.datepicker {
+  width: 20% !important;
+  display: inline-block !important;
+}
+
+.request {
+  width: 20% !important;
+  background-color: red;
+}
