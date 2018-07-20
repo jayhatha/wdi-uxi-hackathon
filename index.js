@@ -94,6 +94,12 @@ app.use(function(req, res, next) {
           res.render('profilethree');
         });
 
+// GET / - profile two
+
+  app.get('/results', function(req, res) {
+          res.render('results');
+        });
+
 app.use('/auth', require('./controllers/auth'));
 
 var server = app.listen(process.env.PORT || 3000, function() {
