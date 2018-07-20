@@ -17,7 +17,7 @@ body {
 }
 
 input {
-  /* width: 40%; */
+  font-size: 1em;
 }
 
 .timepicker,
@@ -42,5 +42,5 @@ p {
 }
 
 label {
-  font-size: 3em;
+  font-size: 1em;
 }
