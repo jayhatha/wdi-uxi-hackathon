@@ -55,6 +55,18 @@ app.use(function(req, res, next) {
           res.render('offer');
         });
 
+// GET / - offer page
+
+  app.get('/signup', function(req, res) {
+          res.render('signup');
+        });
+
+// GET / - offer page
+
+  app.get('/login', function(req, res) {
+          res.render('login');
+        });
+
 app.use('/auth', require('./controllers/auth'));
 
 var server = app.listen(process.env.PORT || 3000, function() {
