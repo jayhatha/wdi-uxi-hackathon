@@ -67,6 +67,12 @@ app.use(function(req, res, next) {
           res.render('login');
         });
 
+// GET / - offer page
+
+  app.get('/profile', function(req, res) {
+          res.render('profile');
+        });
+
 app.use('/auth', require('./controllers/auth'));
 
 var server = app.listen(process.env.PORT || 3000, function() {
