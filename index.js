@@ -3,11 +3,7 @@ var express = require('express');
 var bp = require('body-parser');
 var request = require('request');
 var ejsLayouts = require('express-ejs-layouts');
-var flash = require('connect-flash');
 var session = require('express-session');
-var passport = require('./config/passportConfig');
-var isLoggedIn = require('./middleware/isLoggedIn');
-var db = require('./models');
 var rowdy = require('rowdy-logger');
 
 var app = express();
@@ -26,13 +22,9 @@ app.use(session({
   saveUninitialized: true
 }));
 
-app.use(flash());
-app.use(passport.initialize());
-app.use(passport.session());
 
 // attaches current user to res for all routes, also attaches flash messages
 app.use(function(req, res, next) {
-  res.locals.alerts = req.flash();
   res.locals.currentUser = req.user;
   next();
 });
@@ -76,7 +68,6 @@ app.use(function(req, res, next) {
           res.render('profile');
         });
 
-app.use('/auth', require('./controllers/auth'));
 
 var server = app.listen(process.env.PORT || 3000, function() {
     rowdyResults.print()
