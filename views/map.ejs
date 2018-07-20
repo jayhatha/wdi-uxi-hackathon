@@ -68,10 +68,11 @@ var map = new mapboxgl.Map({
       el.className = 'marker';
 
   // make a marker for each feature and add to the map
-      new mapboxgl.Marker(el)
-      .setLngLat(marker.geometry.coordinates)
-      .addTo(map);
+var marker = new mapboxgl.Marker()
+.setLngLat([-21.9270884, 64.1436456])
+.addTo(map);
 });
+
 </script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

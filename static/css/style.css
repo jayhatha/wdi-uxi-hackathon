@@ -12,3 +12,33 @@ h5 {
   width: 70vw;
   height: 70vh;
 }
+
+.container {
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.bio {
+  margin-bottom: 3em;
+}
+
+input {
+  /* width: 40%; */
+}
+
+.datepicker,
+.timepicker {
+  width: 49% !important;
+  display: inline-block !important;
+}
+
+.request {
+  /* width: 40% !important; */
+}
+
+.neighborhood {
+  /* width: 40% !important; */
+}

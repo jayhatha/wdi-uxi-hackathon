@@ -46,6 +46,36 @@ app.use(function(req, res, next) {
   app.get('/map', function(req, res) {
   res.render('map');
   });
+=======
+// GET / - ask page
+
+  app.get('/ask', function(req, res) {
+          res.render('ask');
+        });
+
+// GET / - offer page
+
+  app.get('/offer', function(req, res) {
+          res.render('offer');
+        });
+
+// GET / - offer page
+
+  app.get('/signup', function(req, res) {
+          res.render('signup');
+        });
+
+// GET / - offer page
+
+  app.get('/login', function(req, res) {
+          res.render('login');
+        });
+
+// GET / - offer page
+
+  app.get('/profile', function(req, res) {
+          res.render('profile');
+        });
 
 app.use('/auth', require('./controllers/auth'));
 
