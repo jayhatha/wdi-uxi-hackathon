@@ -5,7 +5,6 @@ var request = require('request');
 var ejsLayouts = require('express-ejs-layouts');
 var session = require('express-session');
 var rowdy = require('rowdy-logger');
-
 var app = express();
 app.set('view engine', 'ejs');
 
@@ -85,8 +84,6 @@ app.use(function(req, res, next) {
   app.get('/profilethree', function(req, res) {
           res.render('profilethree');
         });
-
-app.use('/auth', require('./controllers/auth'));
 
 var server = app.listen(process.env.PORT || 3000, function() {
     rowdyResults.print()

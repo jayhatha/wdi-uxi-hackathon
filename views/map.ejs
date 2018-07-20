@@ -11,22 +11,10 @@
     </div>
   </div>
 </form>
-<style>
-.marker {
-  background-image: url('mapbox-icon.png');
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-</style>
-<div class="container">
 <div class="row">
     <div class="map col xl12 l12 m12 s12" id="map"></div>
     <div id='geocoder' class='geocoder'></div>
 </div>
-<div class="container">
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet'/>
@@ -41,6 +29,11 @@ var map = new mapboxgl.Map({
         center: [-122.313551, 47.623006],
         zoom: 14.59
       });
+var marker = new mapboxgl.Marker()
+              .setLngLat([-122.313551, 47.623006])
+              .addTo(map);
 </script>
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

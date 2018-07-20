@@ -8,9 +8,17 @@ h5 {
   color: #5b6a46;
 }
 
+.bottomicon {
+  margin: 0 0.5em;
+}
+
+.footericons {
+  text-align: center;
+}
+
 .map {
-  width: 100vw;
-  height: 100vh;
+  width: 68vw;
+  height: 68vh;
 }
 
 .container {
@@ -43,8 +51,7 @@ input {
   /* width: 40% !important; */
 }
 
-.ask {
-}
+.ask {}
 
 .susan {
   width: 70%;
