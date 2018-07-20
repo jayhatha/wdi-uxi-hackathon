@@ -40,15 +40,13 @@ app.use(function(req, res, next) {
 // GET / - main index of site
 
   app.get('/', function(req, res) {
-          res.render('index');
-        });
+  res.render('index');
+   });
 
-
+  app.get('/map', function(req, res) {
+  res.render('map');
+  });
 // GET / - ask page
-
-  app.get('/ask', function(req, res) {
-          res.render('ask');
-        });
 
   app.get('/ask', function(req, res) {
           res.render('ask');

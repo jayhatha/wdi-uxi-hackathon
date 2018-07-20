@@ -1,7 +1,16 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
-  color: #466b34;
+  color: #5b6a46;
+}
+
+h5 {
+  color: #5b6a46;
+}
+
+.map {
+  width: 70vw;
+  height: 70vh;
 }
 
 .container {
@@ -20,8 +29,8 @@ input {
   font-size: 1em;
 }
 
-.timepicker,
-.datepicker {
+.datepicker,
+.timepicker {
   width: 49% !important;
   display: inline-block !important;
 }
@@ -44,3 +53,5 @@ p {
 label {
   font-size: 1em;
 }
+
+
