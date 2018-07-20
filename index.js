@@ -70,10 +70,28 @@ app.use(function(req, res, next) {
           res.render('login');
         });
 
-// GET / - offer page
+// GET / - profile page
 
   app.get('/profile', function(req, res) {
           res.render('profile');
+        });
+
+// GET / - edit account
+
+  app.get('/account', function(req, res) {
+          res.render('account');
+        });
+
+// GET / - profile two
+
+  app.get('/profiletwo', function(req, res) {
+          res.render('profiletwo');
+        });
+
+// GET / - profile two
+
+  app.get('/profilethree', function(req, res) {
+          res.render('profilethree');
         });
 
 app.use('/auth', require('./controllers/auth'));

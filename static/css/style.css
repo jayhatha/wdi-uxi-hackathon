@@ -26,7 +26,7 @@ h5 {
 }
 
 input {
-  /* width: 40%; */
+  font-size: 1em;
 }
 
 .datepicker,
@@ -42,3 +42,16 @@ input {
 .neighborhood {
   /* width: 40% !important; */
 }
+
+.ask {
+}
+
+p {
+  font-size: 2em;
+}
+
+label {
+  font-size: 1em;
+}
+
+
