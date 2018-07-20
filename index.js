@@ -46,7 +46,6 @@ app.use(function(req, res, next) {
   app.get('/map', function(req, res) {
   res.render('map');
   });
-=======
 // GET / - ask page
 
   app.get('/ask', function(req, res) {
