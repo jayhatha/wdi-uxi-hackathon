@@ -85,6 +85,12 @@ app.use(function(req, res, next) {
           res.render('profilethree');
         });
 
+
+
+  app.get('/results', function(req, res) {
+          res.render('results');
+        });
+
 var server = app.listen(process.env.PORT || 3000, function() {
     rowdyResults.print()
 })
