@@ -2,6 +2,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
   color: #5b6a46;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  margin: 0;
 }
 
 h5 {
@@ -23,6 +30,8 @@ h5 {
 
 .container {
   text-align: center;
+  min-height: 100%;
+  margin-bottom: -50px;
 }
 
 .heading {
@@ -63,4 +72,9 @@ p {
 
 label {
   font-size: 1em;
+}
+
+.footer,
+.push {
+  height: 50px;
 }
