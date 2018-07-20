@@ -43,6 +43,11 @@ app.use(function(req, res, next) {
           res.render('index');
         });
 
+// GET / - main index of site
+
+  app.get('/ask', function(req, res) {
+          res.render('ask');
+        });
 
 
 app.use('/auth', require('./controllers/auth'));
