@@ -1,0 +1,49 @@
+h1 {
+  font-family: 'Lemon', cursive;
+  text-shadow: 0 0 3px #000000;
+}
+
+.card-title {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000 !important;
+}
+
+.nav-link,
+a.dropdown-trigger {
+  color: white !important;
+}
+
+.modal-content #authEmail,
+.modal-content #authName,
+.modal-content #authPassword {
+  color: black !important;
+}
+
+#authEmail,
+#authName,
+#authPassword {
+  color: white !important;
+}
+
+input:focus {
+  border-bottom-color: #ff4081 !important;
+}
+
+a {
+  color: #ff4081 !important;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+li a {
+  color: black !important;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+  color: #ff4081;
+}
