@@ -15,6 +15,7 @@
   "author": "jayhatha",
   "license": "ISC",
   "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.3.0",
     "async": "^2.6.1",
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.3",

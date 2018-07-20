@@ -40,10 +40,12 @@ app.use(function(req, res, next) {
 // GET / - main index of site
 
   app.get('/', function(req, res) {
-          res.render('index');
-        });
+  res.render('index');
+   });
 
-
+  app.get('/map', function(req, res) {
+  res.render('map');
+  });
 
 app.use('/auth', require('./controllers/auth'));
 

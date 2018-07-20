@@ -1,0 +1,40 @@
+<form action="/map/filter" method="POST" class="filter-map">
+  <div class="row">
+    <div class="form-group input-field col s8 l3 offset-l4">
+      <select id="tagFilter" class="form-control" name="tagFilter">
+        <option value="" disabled="disabled" selected="selected">Select Tag:</option>
+        <option value="stuff">Stuff</option>
+      </select>
+    </div>
+    <div class="form-group input-field col s4 l2">
+      <button class="btn blue" type="submit">Filter</button>
+    </div>
+  </div>
+</form>
+
+
+<div class="row">
+    <div class="map col xl12 l12 m12 s12" id="map"></div>
+    <div id='geocoder' class='geocoder'></div>
+</div>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet'/>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.css' type='text/css' />
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamF5aGF0aGEiLCJhIjoiY2pqdWJxN3dzMDQxOTNrcnpqOXNiNXM0ZCJ9.zzIXrAb92TyIUrQN_FaRvQ'
+var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/jayhatha/cjjudtqhj478z2spsm6jrschy/',
+        center: [-98, 38],
+        zoom: 4
+      });
+
+      // Adds geocoding control bar on map to zoom to locations
+      map.addControl(new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken
+      }));
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
