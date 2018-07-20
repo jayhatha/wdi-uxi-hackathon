@@ -17,19 +17,19 @@ body {
 }
 
 input {
-  width: 40%;
+  /* width: 40%; */
 }
 
 .timepicker,
 .datepicker {
-  width: 20% !important;
+  width: 49% !important;
   display: inline-block !important;
 }
 
 .request {
-  width: 40% !important;
+  /* width: 40% !important; */
 }
 
 .neighborhood {
-  width: 40% !important;
+  /* width: 40% !important; */
 }
