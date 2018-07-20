@@ -41,8 +41,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
   user.associate = function(models) {
-    models.user.hasMany(models.list);
-    models.user.hasMany(models.team);
   };
 
     // here we check the entered password against the hashed pw in the db
