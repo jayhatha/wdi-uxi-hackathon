@@ -27,8 +27,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamF5aGF0aGEiLCJhIjoiY2pqdWJxN3dzMDQxOTNrcnpqO
 var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/jayhatha/cjjudtqhj478z2spsm6jrschy/',
-        center: [-98, 38],
-        zoom: 4
+        center: [-122.313551, 47.623006],
+        zoom: 14.59
       });
 
       // Adds geocoding control bar on map to zoom to locations
@@ -36,5 +36,42 @@ var map = new mapboxgl.Map({
         accessToken: mapboxgl.accessToken
       }));
 
+      var geojson = {
+  type: 'FeatureCollection',
+  features: [{
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-77.032, 38.913]
+    },
+    properties: {
+      title: 'Mapbox',
+      description: 'Washington, D.C.'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-122.414, 37.776]
+    },
+    properties: {
+      title: 'Mapbox',
+      description: 'San Francisco, California'
+    }
+  }]
+};
+
+      // add markers to map
+      geojson.features.forEach(function(marker) {
+      var el = document.createElement('div');
+      el.className = 'marker';
+
+  // make a marker for each feature and add to the map
+      new mapboxgl.Marker(el)
+      .setLngLat(marker.geometry.coordinates)
+      .addTo(map);
+});
 </script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

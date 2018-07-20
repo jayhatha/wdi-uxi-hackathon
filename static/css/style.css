@@ -1,7 +1,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
-  color: #466b34;
+  color: #5b6a46;
+}
+
+h5 {
+  color: #5b6a46;
 }
 
 .map {
